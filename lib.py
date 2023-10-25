@@ -22,6 +22,3 @@ class KeksikAPI(Base):
     @property
     def other(self) -> other.OtherCategory:
         return other.OtherCategory(self.token, self.group_id)
-
-keks = KeksikAPI('1', 1)
-keks.donates.get(sort='amount')
