@@ -50,7 +50,7 @@ class DonatesCategory(Base):
             'group': self.group_id,
             'token': self.token,
             'v': self.v,
-            'last_id': last_id
+            'last': last_id
             }
         )
 
