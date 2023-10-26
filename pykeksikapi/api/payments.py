@@ -1,7 +1,7 @@
-from http_client.request import HttpClient
-from models.base import Base
+from ..http_client.request import HttpClient
+from ..models.base import Base
 
-from models.models import PaymentsGetModel, PaymentsCreateModel
+from ..models.models import PaymentsGetModel, PaymentsCreateModel
 
 import json
 

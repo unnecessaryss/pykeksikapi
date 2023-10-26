@@ -1,7 +1,7 @@
-from http_client.request import HttpClient
-from models.base import Base
+from ..http_client.request import HttpClient
+from ..models.base import Base
 
-from models.models import BalanceModel
+from ..models.models import BalanceModel
 
 import json
 

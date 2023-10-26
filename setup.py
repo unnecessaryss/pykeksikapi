@@ -8,7 +8,7 @@ requirements = ['aiohttp', 'typing', 'pydantic']
 
 setup(
     name="pykeksikapi",
-    version="0.15",
+    version="0.20",
     author="unneccessaryss",
 
     description="This library is needed for working with api.keksik.io. It provides convenient tools for processing the API of this website.",

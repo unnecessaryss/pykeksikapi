@@ -1,7 +1,7 @@
-from http_client.request import HttpClient
-from models.base import Base
+from ..http_client.request import HttpClient
+from ..models.base import Base
 
-from models.models import (
+from ..models.models import (
     GetDonateModel,
     ChangeStatusModel,
     AnswerModel,
