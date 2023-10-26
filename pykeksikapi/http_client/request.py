@@ -1,28 +1,24 @@
-import aiohttp
+import aiohttp, json
+
 
 class HttpClient:
-    
     async def request(
         api_method: str, 
-        http_method: str = 'POST', 
+        http_method: str = 'POST',
+        url: str = 'https://api.keksik.io/',
+        data: dict = {},
         *args, 
         **kwargs
     ) -> dict:
-    
-        url = 'https://api.keksik.io/'
-
         try:
-
             async with aiohttp.ClientSession() as session:
-
                 outcome = await (
                     await session.request(
-                        http_method, url + api_method, *args, **kwargs
+                        http_method, url + api_method, data=json.dumps(data), *args, **kwargs
                     )
                 ).json()
 
         except Exception as exc:
-
             outcome = {
                 'success': False,
                 'error': 1000,

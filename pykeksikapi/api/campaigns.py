@@ -1,5 +1,7 @@
 from ..models.base import Base
 
+
 class СampaignsCategory(Base):
-    
-    coming_soon = True
+
+    async def coming_soon(self):
+        return 'COMING SOON'
